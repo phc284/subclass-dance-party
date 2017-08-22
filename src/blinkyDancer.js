@@ -8,7 +8,7 @@ var BlinkyDancer = function(top, left, timeBetweenSteps) {
 
   // this.oldStep = this.step;
   // this.step;
-  this.step();
+  //this.step();
 };
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
