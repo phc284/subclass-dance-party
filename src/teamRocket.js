@@ -1,4 +1,4 @@
-var legolasDancer = function(top, left, timeBetweenSteps) {
+var TeamRocket = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
@@ -6,29 +6,27 @@ var legolasDancer = function(top, left, timeBetweenSteps) {
   
 };
 
-legolasDancer.prototype = Object.create(makeDancer.prototype);
-legolasDancer.prototype.constructor = legolasDancer;
-legolasDancer.prototype.setPosition = function() {
+TeamRocket.prototype = Object.create(makeDancer.prototype);
+TeamRocket.prototype.constructor = TeamRocket;
+TeamRocket.prototype.setPosition = function() {
   return;
 };
-var bool = true;
-legolasDancer.prototype.step = function() {
+var legolasShown = true;
+TeamRocket.prototype.step = function() {
   // call the old version of step at the beginning of any call to this new version of step
   //makeDancer.prototype.step(this);
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  if (bool) {
-    this.$node.addClass('legolas');
+  if (legolasShown) {
+    this.$node.addClass('rocketBalloon');
     this.$node.removeClass('dancer');
     $('.gollum').slideUp();
-    $('.legolas').fadeOut(100);
-    //ssetTimeout(this.step.bind(this), this.timeBetweenSteps);
-    bool = false;
+    legolasShown = false;
   } else {
     this.$node.removeClass('dancer');
-    $('.legolas').fadeOut(100);
-    bool = true;
+    $('.rocketBalloon').fadeOut(100);  
+    legolasShown = true;
   }
 };
 

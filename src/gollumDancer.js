@@ -17,7 +17,7 @@ gollumDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.addClass('gollum');
-  this.$node.addClass('spinning');
+  this.$node.addClass('wobble');
   this.$node.removeClass('dancer');
   //ssetTimeout(this.step.bind(this), this.timeBetweenSteps);
   this.$node.toggle();

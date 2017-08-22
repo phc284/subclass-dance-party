@@ -3,8 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url("https://zombiesubtitles.files.wordpress.com/2014/04/screen-shot-2014-04-28-at-9-16-54-pm.png");
-  background-size: cover;
+  background-image: url("http://cdn.pcwallart.com/images/pixel-art-pokemon-wallpaper-2.jpg");
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -42,17 +41,36 @@ body, a:link, a:visited, a:active{
   animation:spin 4s linear infinite;
 }
 
-.legolas{
-  background-image: url("http://i.imgur.com/6FipZa0.gif");
-  background-size: 100%;
+.rocketBalloon{
+  background-image: url("https://media.giphy.com/media/v3kINmQVvPH4A/giphy.gif");
+  background-size: 5%;
   height: 99%;
-  width: 99%;
+  width: 100%;
   background-repeat: no-repeat;
   position:absolute;
 /*  top: 150px;
   left: 150px;*/
-  margin: 30px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
+/* trying to make grow or zoomIn work with rocketBalloon*/
+/*.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 3s;
+}*/
+
+.wobble { 
+  -webkit-animation: wobble 5s infinite; 
+}
+
+@-webkit-keyframes wobble  {
+0%  { -webkit-transform:  rotate(0deg); }
+20%  { -webkit-transform:  rotate(8deg); }
+50%  { -webkit-transform:  rotate(-8deg); }
+100%  { -webkit-transform:  rotate(0deg); }
+}
+
+/*@keyframes zoomIn { from { opacity: 0; transform: scale3d(.3, .3, .3); } 50% { opacity: 1; }}
+*/
 
 @-moz-keyframes spin {100% { -moz-transform: rotate(360deg); }}
 @-webkit-keyframes spin {100% { -webkit-transform: rotate(360deg); }}
