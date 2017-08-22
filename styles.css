@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("https://zombiesubtitles.files.wordpress.com/2014/04/screen-shot-2014-04-28-at-9-16-54-pm.png");
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -25,8 +26,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-.weird{
-  border:10px solid green;
-  border-radius:10px;
+
+.gollum{
+  background-image: url("http://forgifs.com/gallery/d/246188-2/Baby-Gollum.gif");
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
   position:absolute;
 }
