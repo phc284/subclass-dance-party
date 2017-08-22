@@ -29,4 +29,8 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+//  $('.legolas').on('click', function() {
+//   $('.gollum').hide();  
+  //});
 });
